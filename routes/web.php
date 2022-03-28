@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/' , App\Http\Livewire\Home::class)->name('home');
 Route::get('/over-ons' , App\Http\Livewire\About::class)->name('about');
-Route::get('/behandelingen' , App\Http\Livewire\OverOns::class)->name('treatments');
+Route::get('/winkel' , App\Http\Livewire\Products::class)->name('products');
