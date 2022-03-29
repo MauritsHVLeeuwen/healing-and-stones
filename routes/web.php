@@ -15,4 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/' , App\Http\Livewire\Home::class)->name('home');
 Route::get('/over-ons' , App\Http\Livewire\About::class)->name('about');
-Route::get('/winkel' , App\Http\Livewire\Products::class)->name('products');
+Route::get('/winkel' , App\Http\Livewire\Products\Index::class)->name('products');
+Route::get('/winkel/{id}' , App\Http\Livewire\Products\Show::class)->name('product');

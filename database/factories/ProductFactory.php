@@ -18,7 +18,7 @@ class ProductFactory extends Factory
     {
         return [
             'name' => $this->faker->name(),
-            'image_path' => '',
+            'image_path' => 'https://placekitten.com/200/300',
             'price' => $this->faker->numberBetween(10,10000),
         ];
     }

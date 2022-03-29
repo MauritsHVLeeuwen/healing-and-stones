@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Product extends Model
 {
     use HasFactory;
+
+    public function getDisplayPriceAttribute()
+    {
+        return '€' . substr_replace($this->price, ',', strlen($this->price) - 2 , 0);
+    }
 }
